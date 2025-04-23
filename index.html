@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Jhumm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #ffc0cb, #ffe4e1);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      margin-top: 1.5rem;
+      color: #d6336c;
+      animation: slideIn 2s ease, scaleIn 2s ease;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.5); }
+      to { transform: scale(1); }
+    }
+
+    .special-message {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #ff1493;
+      margin: 1rem auto;
+      max-width: 90%;
+      animation: glow 2s ease-in-out infinite alternate, bounceFade 3s ease-out;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493, 0 0 30px #db7093; }
+      to { text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493, 0 0 40px #db7093; }
+    }
+
+    @keyframes bounceFade {
+      0% { transform: translateY(-50px); opacity: 0; }
+      50% { transform: translateY(20px); opacity: 1; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    p.love-note {
+      font-size: 1.4rem;
+      margin: 1.5rem auto;
+      max-width: 600px;
+      background-color: #fff0f5;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 3s ease-in;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      padding: 2rem;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, filter 0.3s ease;
+      object-fit: cover;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      filter: grayscale(50%);
+    }
+
+    /* Message box with background image */
+    .message-box {
+      display: inline-block;
+      width: 80%;
+      background-image: url('/mnt/data/050d8a99-17d2-46e8-9c29-ee93b84b5c86.png');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+    }
+
+    /* The hidden message */
+    .hidden-message {
+      display: none;
+      margin-top: 15px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      font-size: 1.3rem;
+    }
+
+    .message-box:hover .hidden-message {
+      display: block;
+    }
+
+    audio {
+      margin-top: 2rem;
+      animation: fadeIn 4s ease-in;
+    }
+
+    /* Sparkle animation */
+    .sparkle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #fff;
+      animation: sparkleAnim 2s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes sparkleAnim {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+
+    /* Fireworks Animation */
+    .firework {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff1493;
+      border-radius: 50%;
+      animation: fireworkAnim 1.5s ease-out infinite;
+    }
+
+    @keyframes fireworkAnim {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(0); opacity: 0; }
+    }
+
+    /* Emoji Falling Effect */
+    .emoji {
+      position: absolute;
+      font-size: 3rem;
+      animation: fall 3s ease-in forwards;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Jhumm</h1>
+
+  <div class="special-message">
+    Blow the candles high<br>
+    Let the wishes soar<br>
+    Heheheheheheeeeeeee.<br>
+    <div class="birthday-message">
+        Happy birthday to you, Jannatul Jumara 💌
+      </div>
+      
+      <style>
+        .birthday-message {
+          font-family: 'Great Vibes', cursive; /* Elegant cursive font */
+          font-size: 2.5rem; /* Font size */
+          color: #ff1493; /* Pink color */
+          font-style: italic; /* Italic style */
+          text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.4), 0 0 25px #ff1493, 0 0 5px #ff1493;
+          animation: pulse 1.5s infinite; /* Pulse animation */
+        }
+      
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+        }
+      </style>
+      
+
+  </div>
+
+  <p class="love-note">Hey Jhum!! This is your birthday. Haaaaaaaaappppy BBBBirthhhhday<br>Happy Birthday to you gullumuulu! 
+    I love you.</p>
+
+  <!-- Message Box with Image Background -->
+  <div class="message-box" onclick="toggleMessage()">
+    Click the special message!
+    <div class="hidden-message">
+      Thanks for coming my life.. <br>lvoeu❤️❤️!
+      anddd<br> every picture here carries a story.!!<br>...mone ache ei din gular kotha>,<br>🦄❤️╰(*°▽°*)╯
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="img1.jpg" alt="Moment 1" onclick="openLightbox(this)">
+    <img src="img2.jpg" alt="Moment 2" onclick="openLightbox(this)">
+    <img src="img3.jpg" alt="Moment 3" onclick="openLightbox(this)">
+    <img src="img4.jpg" alt="Moment 4" onclick="openLightbox(this)">
+    <img src="img5.jpg" alt="Moment 5" onclick="openLightbox(this)">
+    <img src="img6.jpg" alt="Moment 6" onclick="openLightbox(this)">
+    <img src="img7.jpg" alt="Moment 7" onclick="openLightbox(this)">
+    <img src="img8.jpg" alt="Moment 8" onclick="openLightbox(this)">
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="romantic_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <img src="" id="lightboxImage" />
+  </div>
+
+  <script>
+    // Toggle the visibility of the hidden message
+    function toggleMessage() {
+      const hiddenMessage = document.querySelector('.hidden-message');
+      hiddenMessage.style.display = hiddenMessage.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Add sparkle elements dynamically
+    const body = document.body;
+    for (let i = 0; i < 40; i++) {
+      const sparkle = document.createElement("div");
+      sparkle.className = "sparkle";
+      sparkle.style.left = Math.random() * 100 + "vw";
+      sparkle.style.top = Math.random() * 100 + "vh";
+      sparkle.style.animationDuration = (2 + Math.random() * 2) + "s";
+      sparkle.style.animationDelay = (Math.random() * 5) + "s";
+      body.appendChild(sparkle);
+    }
+
+    // Add fireworks effects dynamically
+    for (let i = 0; i < 5; i++) {
+      const firework = document.createElement("div");
+      firework.className = "firework";
+      firework.style.left = Math.random() * 100 + "vw";
+      firework.style.top = Math.random() * 100 + "vh";
+      firework.style.animationDuration = (Math.random() * 2 + 2) + "s";
+      firework.style.animationDelay = (Math.random() * 5) + "s";
+      body.appendChild(firework);
+    }
+
+    // Lightbox for images
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      lightbox.style.display = 'flex';
+      lightboxImage.src = img.src;
+
+      // Add emoji drop effect
+      dropEmojis();
+    }
+
+    // Close lightbox when clicked
+    document.getElementById('lightbox').addEventListener('click', function() {
+      this.style.display = 'none';
+    });
+
+    // Function to create falling emojis
+function dropEmojis() {
+    const emojis = [
+      "&#10084;&#65039;",  // ❤️
+      "&#127880;",          // 🎈
+      "&#129360;",          // 🧨
+      "&#127881;",          // 🎉
+      "&#129352;",          // 🥂
+      "&#127874;"           // 🎂
+    ];
+    const body = document.body;
+  
+    for (let i = 0; i < 10; i++) {
+      const emoji = document.createElement("div");
+      emoji.className = "emoji"; // Add the class for styling
+      emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)]; // Use innerHTML to render HTML entities
+      emoji.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+      emoji.style.animationDuration = (Math.random() * 3 + 2) + "s"; // Random speed for falling
+      emoji.style.animationDelay = Math.random() * 2 + "s"; // Random delay before it starts falling
+      body.appendChild(emoji);
+    }
+  }
+  
+      
+    
+
+    window.addEventListener('load', () => {
+      const audio = document.querySelector("audio");
+      if (audio) {
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Music autoplayed successfully
+            })
+            .catch(error => {
+              // Fallback button to trigger music
+              const btn = document.createElement('button');
+              btn.innerText = "Tap to play music 🎶";
+              btn.style.position = 'fixed';
+              btn.style.top = '20px';
+              btn.style.left = '50%';
+              btn.style.transform = 'translateX(-50%)';
+              btn.style.padding = '10px 20px';
+              btn.style.fontSize = '1.2rem';
+              btn.style.background = '#ff69b4';
+              btn.style.color = '#fff';
+              btn.style.border = 'none';
+              btn.style.borderRadius = '12px';
+              btn.style.zIndex = '9999';
+              btn.onclick = () => {
+                audio.play();
+                btn.remove();
+              };
+              document.body.appendChild(btn);
+            });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
