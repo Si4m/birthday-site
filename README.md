@@ -1,6 +1,6 @@
 # 🎉Birthday wishing page with pic.🎂
 
-This is a sweet and vibrant birthday web page created by **Md Irfan Uddin**, a Software Engineering student at **Daffodil International University (DIU)**. The page is dedicated to someone special — *Jannatul Jumara*, to celebrate her birthday in a fun, creative, and heartfelt way! 💌
+This is a sweet and vibrant birthday web page created by **Md Irfan Uddin**, a Software Engineering student at **Daffodil International University (DIU)**. The page is dedicated to someone special to celebrate her birthday in a fun, creative, and heartfelt way! 💌
 
 ## 🌟 Features
 
